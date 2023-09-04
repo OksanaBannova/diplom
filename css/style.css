@@ -1,0 +1,933 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 600;
+  font-style: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul, li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+ 
+.header {
+  width: 100%;
+  display: flex;
+  background-color: #2c3b3e;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 135px;
+  box-sizing: border-box;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.logo {
+  width: 179px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  color: #f3f3f2;
+  text-decoration: underline;
+  background-color: d8d8d6;
+  text-decoration-style: solid;
+}
+
+.menu-item:nth-child(n + 2) {
+  margin-left: 35px;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 45px;
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 700px;
+  margin: 102px auto auto auto;
+  background-size: cover;
+}
+
+.content-main {
+  margin-top: 63px;
+}
+
+
+.content-aside {
+  width: 100%;
+}
+
+.caption-line {
+   display: flex;
+  font-family: OpenSansBold, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.trend-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.trend-title::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #b59f5b;
+  width: 66px;
+  margin: 10px auto 0;
+}
+
+.trend-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 27px;
+}
+
+.trend-content {
+  display: flex;
+  align-items: flex-end;
+  width: calc(100%/4 - 3px);
+  min-height: 315px;
+  position: relative;
+}
+
+.trend-content::before {
+  content: "";
+  display: block;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.picture1 {
+  background-image: url(C:/Users/Artem/Desktop/mq-диплом/img/trend1.jpg);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.picture2 {
+  background-image: url(C:/Users/Artem/Desktop/mq-диплом/img/trend2.jpg);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.picture3 {
+  background-image: url(C:/Users/Artem/Desktop/mq-диплом/img/trend3.jpg);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.picture4 {
+  background-image: url(C:/Users/Artem/Desktop/mq-диплом/img/trend4.jpg);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title-content {
+  border: 3px solid #b59f5b;
+  margin: auto 20px 15px;
+  padding: 36px 40px 33px;
+  max-height: 300px;
+  z-index: 2;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.category-link {
+  margin-right: 20px;
+}
+
+.category-item {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #b59f5b;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.gallery-text {
+  font-family: OpenSansBold, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.container-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 63px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 778px;
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 58px;
+  align-items: flex-start;
+}
+
+.title-category {
+}
+
+.picture {
+  display: inline-block;
+  width: 381px;
+  background-color: #eff6f1;
+  margin-right: 30px;
+}
+
+.picture:nth-child(n + 2) {
+  margin-top: 58px;
+}
+
+.category {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+}
+
+.category-link {
+  margin-right: 20px;
+}
+
+.category-link:last-child {
+  margin-right: 0;
+}
+
+.category-item {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #b59f5b;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.category-item:hover {
+  text-decoration: underline;
+  color: #b59f5b;
+}
+
+.header-main {
+  font-family: OpenSansBold, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #0f0d0e;
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.header-main:hover {
+  color: #baa66a;
+}
+
+.date-author {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.date {
+  font-family: OpenSans, sans-serif;
+  font-size: 12px;
+  color: #989898;
+  margin-right: 15px;
+}
+
+.author {
+  font-family: OpenSansBold, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.post-list {
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #0f0d0e;
+}
+
+.sidebar {
+  width: 272px;
+  margin-right: 15px;
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+
+
+.caption {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.caption:after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+  width: 66px;
+  height: 3px;
+  background: #b59f5b;
+}
+
+.title-sidebar {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.title-sidebar:last-child {
+  margin-bottom: 0px;
+}
+
+.pic {
+  display: inline-block;
+  width: 70px;
+  background-color: #eff6f1;
+  margin-right: 17px;
+}
+
+
+.date-sidebar {
+  font-family: OpenSans, sans-serif;
+  font-size: 12px;
+  color: #989898;
+  margin: 0;
+}
+
+.post-list__sidebar {
+  text-decoration: none;
+  color: #000000;
+  font-family: OpenSansBold, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.post-list__sidebar:hover {
+  color: #b59f5b;
+}
+
+.search-bht {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.form-bth {
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 58px;
+  margin-top: 50px;
+}
+
+.search {
+  box-sizing: border-box;
+  width: 223px;
+  height: 47px;
+  background-color: #f4f7f6;
+  border: none;
+  text-indent: 20px;
+  display: flex;
+
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+}
+
+.search:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.bth {
+  width: 50px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  background: #b59f5b;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  box-sizing: border-box;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  border: none;
+}
+
+.bth:hover {
+  background-color: #323232;
+}
+
+.visibility-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.email-search {
+  box-sizing: border-box;
+  width: 100%;
+  height: 47px;
+  background-color: #f4f7f6;
+  padding-left: 19px;
+  border: none;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  margin-bottom: 19px;
+}
+
+.email-search:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  height: 47px;
+  background-color: #b59f5b;
+  border: none;
+  color: #ffffff;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #323232;
+}
+
+.tags-header {
+  margin-bottom: 50px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.title-tags {
+  display: flex;
+  margin-right: 5px;
+  margin-bottom: 6px;
+}
+
+.tags-text {
+  border: 3px solid #eeeeee;
+  color: #000000;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 12px;
+  padding: 5px 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+
+  display: block;
+}
+
+.tags-text:hover {
+  border: 3px solid #b59f5b;
+}
+
+.themes {
+  list-style-type: none;
+}
+
+.categories {
+  margin-top: 14px;
+}
+
+.categories:after {
+  content: "";
+  display: block;
+  margin-top: 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.categories-list {
+  align-items: center;
+  align-content: space-between;
+  text-decoration: none;
+  font-family: OpenSansBold, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 0 5px 0 0;
+}
+
+.categories-list:hover {
+  color: #b59f5b;
+}
+
+.index {
+  display: inline-block;
+  font-family: OpenSansBold, sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+  vertical-align: text-top;
+  color: #b59f5b;
+}
+
+.products {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.product-title-text {
+  font-family: OpenSansBold, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.product-title-text::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #b59f5b;
+  width: 66px;
+  margin: 10px auto 0;
+}
+
+.product {
+  display: flex;
+  margin-top: 30px;
+  column-gap: 75px;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: calc(100%/3 - 30px);
+}
+
+.product__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: -35px;
+  border: 3px solid #b59f5b;
+  height: 264px;
+  padding: 50px 20px 0px;
+}
+
+.subtitle {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: OpenSansBold;
+  text-transform: uppercase;
+  color: #0f0d0e;
+}
+
+.subtitle:hover {
+  color: #b59f5b;
+}
+
+.product__description {
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.product-text {
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #b59f5b;
+}
+
+.product-text:hover {
+  color: #888888;
+}
+
+.product__footer {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+}
+
+.product__prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__price-value {
+  font-family: OpenSansBold;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product__price_old {
+  text-decoration: line-through;
+  font-family: OpenSansBold;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product__button {
+  width: 139px;
+  height: 49px;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #b59f5b;
+  border: none;
+  font-family: ;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.product__button:hover {
+  background-color: #000;
+}
+
+.footer {
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  background-color: #f4f7f6;
+  margin-bottom: 73px;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  text-decoration: none;
+}
+
+.socials-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 30px 0 30px 0;
+}
+
+.socials-item {
+  display: flex;
+  margin: 0 auto;
+  background-position: center;
+  margin-right: 30px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.footer-bribbble {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+  width: 21px;
+  height: 21px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-pinterest {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+  width: 21px;
+  height: 21px;
+}
+
+.footer-tamblr {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  width: 21px;
+  height: 21px;
+  margin: 0;
+}
+
+.footer-copyrights {
+  margin-bottom: 40px;
+}
+
+.copyrights {
+  text-decoration: none;
+}
+
+.footer-text {
+  font-family: OpensansBold, sans-serif;
+  font-size: 12px;
+  color: #999999;
+  text-align: center;
+}
+
+
+.popup-overlay {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-popup {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  width: 90%;
+  max-width: 391px;
+  height: 588px;
+  padding: 40px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -360px;
+  margin-top: -185px;
+}
+
+.popup-title {
+  font-family: OpenSansBold, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.select-group {
+  display: block;
+}
+
+.form-hint {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+}
+
+.option-popup {
+
+  border: none;
+  width: 330px;
+  height: 49px;
+  background-color: #f4f7f6;
+  vertical-align: middle;
+}
+
+.option {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #818382;
+  padding-left: 18px;
+  
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .header {
+    
+    background-image: url(C:/Users/Artem/Desktop/mq-диплом/img/banner-bg-tablet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+        display: block;
+    }
+  .container-box {
+  min-width: 697px;
+}
+.content-main {
+
+justify-content: center;
+}
+
+.trend-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+.content {
+  grid-auto-flow: 1;
+}
+.text {
+  margin-left: 35px;
+  flex-direction: column;
+  
+}
+
+.trend-content {
+  width: calc(100% / 2 - 3px);
+}
+
+.text::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 391px;
+  height: 3px;
+  background: #eeeeee;
+  margin-bottom: 42px;
+  margin-top: 15px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.picture {
+  width: 392px;
+  margin-bottom: 15px;
+}
+.sidebar {
+  width: 272px;
+  margin-right: 35px;
+}
+
+.footer {
+  width: 697px;
+}
+}
