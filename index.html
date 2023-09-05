@@ -48,9 +48,9 @@
 
 <main class="content-main">
     <div class="content-aside">
-  <header class="caption-line">
+  <div class="caption-line">
     <h2 class="trend-title">Сейчас в тренде</h2>
-  </header>
+  </div>
   <div class="trend-container">
     <div class="trend-content picture1">
       <article class="title-content">
@@ -308,7 +308,7 @@
           <a href="#0" class="tags-text">Lifestyle</a>
         </li>
         <li class="title-tags">
-          <a href="#0" class="tags-text">ART</a>
+          <a href="#0" class="tags-text art">ART</a>
         </li>
         <li class="title-tags">
           <a href="#0" class="tags-text">Interior</a>
@@ -362,14 +362,14 @@
         <picture>
           <source 
           media="(min-width: 1220px"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-desk1.jpg">
+          srcset="img/shop-item-desk1.jpg">
           <source 
           media="(min-width: 641px) and (max-width : 1199px)"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-tablet1.jpg">
+          srcset="img/shop-item-tablet1.jpg">
           <source 
           media="(max-width: 640px"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-mobile1.jpg">
-          <img class="product-img" src="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-desk1.jpg">
+          srcset="img/shop-item-mobile1.jpg">
+          <img class="product-img" src="img/shop-item-desk1.jpg">
         </picture>
         <div class="product__title">
           <a href="#0" class="subtitle">
@@ -395,14 +395,14 @@
         <picture>
           <source 
           media="(min-width: 1220px"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-desk2.jpg">
+          srcset="img/shop-item-desk2.jpg">
           <source 
           media="(min-width: 641px) and (max-width : 1199px)"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-tablet2.jpg">
+          srcset="img/shop-item-tablet2.jpg">
           <source 
           media="(max-width: 640px"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-mobile2.jpg">
-          <img class="product-img" src="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-desk2.jpg">
+          srcset="img/shop-item-mobile2.jpg">
+          <img class="product-img" src="img/shop-item-desk2.jpg">
         </picture>
         <div class="product__title">
           <a href="#0" class="subtitle">
@@ -420,19 +420,20 @@
   </footer>
     </article>
 
-    <article class="product-content">
+    <article class="product-content last-tablet">
         <picture>
           <source 
           media="(min-width: 1220px"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-desk3.jpg">
+          srcset="img/shop-item-desk3.jpg">
           <source 
           media="(min-width: 641px) and (max-width : 1199px)"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-tablet3.jpg">
+          srcset="img/shop-item-tablet3.jpg">
           <source 
           media="(max-width: 640px"
-          srcset="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-mobile3.jpg">
-          <img class="product-img" src="C:/Users/Artem/Desktop/mq-диплом/img/shop-item-desk3.jpg">
+          srcset="img/shop-item-mobile3.jpg">
+          <img class="product-img" src="img/shop-item-desk3.jpg">
         </picture>
+        <div class="produck-body">
         <div class="product__title">
           <a href="#0" class="subtitle">
             <h3>Подушки на диван</h3>
@@ -448,6 +449,7 @@
               <span class="product__price-value">400</span>
               <span class="product__rub">₽</span>
             </span>
+          </div>
             <button class="product__button" type="button">в магазин</button>
       </div>
 </footer>
@@ -477,41 +479,61 @@
   </a>
   <div>
 
- <div class="popup-overlay">
+ 
+<div class="popup-overlay">
+         <div class="popup">
 
-    <div class="form-popup">
-      <h1 class="popup-title">Ваш фидбек</h1>
-  <form action="#" class="popup">
-  <div class="form-group"> 
-    <label class="select-group">
-    <span class="form-hint">Как часто вы заходите на сайт?</span>
-    <select class="option-popup">
-      <option value="day" selected>Почти каждый день</option>
-      <option class="week">Раз в неделю</option>
-      <option class="month">Раз в месяц</option>
-      <svg class="form-arrows" width="174" height="296" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M86.944.389l75.297 130.417H11.648L86.944.389zM86.945 296L11.648 165.583h150.593L86.944 296z" fill="#B59F5B"/></svg>
-    </select>
-</div>
-  </label>
-    <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
-    <label class="option-answer">
-      <input type="radio" name="answer" checked>Да</label>
-      <label>
-        <input type="radio" name="answer">Нет</label>
+         <section class="popup-content">
+           <label for="popup" class="popup-close"><img class="popup-svg" src="svg/form-x.svg" alt="Крестик"></label>
 
-        <span class="form-hint">
-          Расскажите какой контент вы хотели бы видеть на нашем сайте?</span>
-        <textarea class="form-field" placeholder="Может, больше рецептов?"></textarea>
-        <button type="submit" class="popup-bth">Отправить</button>
-        <button type="button" class="close">
-          <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px" class="popup-close">    <path d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"/></svg>
-        </button>
-  </form>
-</div>
+              <h2 class="popup-title">Ваш фидбек</h2>
+
+           <form class="form">
+
+              <label class="select-group"> 
+                  <span class="form-hint">Как часто вы заходите на сайт?</span>
+
+                <select class="select">
+                  <option value="Почти каждый день" selected>Почти каждый день</option>
+                  <option value="каждый день">Каждый день</option>
+                  <option value="Раз в неделю">Раз в неделю</option>
+                  <option value="Раз в месяц">Раз в месяц</option>
+
+                </select>
+                <img class="form-arrows" src="svg/form-arrows.svg" alt="form-arrows">
+              </label>
+
+                <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+
+               <div class="radio-box">
+                  <label class="checkbox-group">
+                    <input type="radio" class="checkbox" name="answer" checked>
+                     <img class="radio-svg checked" src="svg/form-empty-circle.svg" alt="circle">
+                    <span class="checkbox-text">Да</span>
+                  </label>
+                  
+
+                  <label class="checkbox-group">
+                     <input type="radio" class="checkbox" name="answer">
+                     <img class="radio-svg empty" src="svg/form-empty-circle.svg" alt="circle">
+                     <span class="checkbox-text">Нет</span>
+                  </label>
+               </div>
+
+                <label class="field-group">
+                  <span class="form-hint">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+                  <textarea class="textarea" placeholder="Может, больше рецептов?" required></textarea>
+                </label>
+
+                <button class="button-form" type="reset">Отправить</button>
+
+            </form>
+
+      </section>
+   </div>
+
 </div>
 
       </body>
-  </html>
-  </main>
-</div>
+  </html>      
+  
