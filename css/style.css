@@ -122,7 +122,7 @@ ul, li, a {
 }
 
 .content-main {
-  margin-top: 63px;
+  margin-top: 55px;
 }
 
 
@@ -155,7 +155,10 @@ ul, li, a {
 }
 
 .trend-container {
+  max-width: 1660px;
   display: flex;
+  margin: 0 auto;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 4px;
   margin-top: 27px;
@@ -217,7 +220,7 @@ ul, li, a {
 .title-content {
   border: 3px solid #b59f5b;
   margin: auto 20px 15px;
-  padding: 36px 40px 33px;
+  padding: 36px 45px 33px;
   max-height: 300px;
   z-index: 2;
 }
@@ -1045,6 +1048,12 @@ justify-content: center;
   margin-top: 15px;
 }
 
+.post-list {
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
 .products {
   width: 100%;
   padding: 0 36px;
@@ -1078,6 +1087,8 @@ justify-content: center;
 .footer {
   width: 697px;
 }
+
+
 }
 
 @media (max-width: 640px) {
@@ -1283,4 +1294,13 @@ justify-content: center;
   height: 19px;
   margin: 0;
 }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+  .trend-container {
+   width: calc((100% / 2) - 3px);
+  }
+  .title-content {
+    padding: 20px 10px 10px;
+  }
 }
