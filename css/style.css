@@ -931,11 +931,18 @@ ul, li, a {
 }
 
 .popup-close {
+  background-image: url(../svg/close.svg);
+  width: 20px;
+  height: 20px;
   position: absolute;
   right: 0px;
   top: -30px;
   cursor: pointer;
-}
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  }
 
 
 .popup-svg {
@@ -946,7 +953,7 @@ ul, li, a {
 .popup-title {
   font-size: 20px;
   font-weight: bold;
-  font-family: OpenSansBold;
+  font-family: OpenSansBold, sans-serif;
   text-transform: uppercase;
   color: #0f0d0e;
   text-align: center;
@@ -1021,6 +1028,7 @@ ul, li, a {
   font-weight: 400;
   color: #0f0d0e;
   margin-bottom: 10px;
+  font-family: OpenSans, sans-serif;
 }
 
 .radio-box {
